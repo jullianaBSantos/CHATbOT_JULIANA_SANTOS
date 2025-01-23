@@ -22,7 +22,7 @@ def obter_resposta(texto: str) -> str:
 
     return f'Desculpa, não entendi a questão! {texto}'
 
-"""
+    """
     respostas = {
         ('olá', 'boa tarde', 'bom dia'): 'Olá tudo bem!',
         'como estás': 'Estou bem, obrigado!',
@@ -30,7 +30,9 @@ def obter_resposta(texto: str) -> str:
         'como te chamas': 'O meu nome é: Bot :)',
         'tempo': 'Está um dia de sol!',
         ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...',
-        'historia de portugal': 'Portugal tem uma rica história...',
+        'horas':f'São: {datatime.now():%H:€M} horas',
+        'data': f'Hoje é dia: {datetime.now():%d-%m-%Y}'
+        'capita de Portugal '
     }
 
     for chave, resposta in respostas.items():
